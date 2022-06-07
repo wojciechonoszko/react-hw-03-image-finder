@@ -66,6 +66,12 @@ class App extends Component {
         );
     };
 
+    showLoader = () => {
+        this.setState(prevState =>
+            prevState.showLoader ? null : {showLoader: true}
+        );
+    };
+
     hideLoader = () => {
         this.setState(prevState =>
             prevState.showLoader ? {showLoader: false} : null
