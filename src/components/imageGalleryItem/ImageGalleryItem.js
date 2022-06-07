@@ -1,4 +1,4 @@
-import {ImageGalleryItemContainer} from './ImageGalleryItemStyled';
+import {ImageGalleryItemContainer} from './ImageGalleryItemStyles';
 import PropTypes from 'prop-types';
 
 const ImageGalleryItem = ({id, imgURL, largeImageURL}) => {

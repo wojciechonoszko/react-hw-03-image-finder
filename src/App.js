@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {MyLoader} from '.components/loader/Loader';
+import {MyLoader} from './components/loader/Loader';
 import {getImagesWithDelay} from './Api';
 import Button from './components/button/Button';
 import ImageGallery from './components/imageGallery/ImageGallery';
@@ -72,5 +72,30 @@ class App extends Component {
         );
     };
 
-    
+    render() {
+        return (
+            <>
+                <Searchbar onSubmit={this.onSearchSubmit}></Searchbar>
+                    {this.state.images.length > 0 && (
+                        <ImageGallery
+                        images={this.state.images}
+                        onItemClick={this.onItemClick}
+                        ></ImageGallery>
+                    )}
+                    {this.state.images.length > 0 && (
+                        <Button onClick={this.onBtnClick}></Button>
+                    )}
+                    {this.state.modalLargeURL && (
+                        <Modal
+                            largeImageURL={this.state.modalLargeURL}
+                            closeModal={this.closeModal}
+                        ></Modal>
+                    )}
+                    {this.state.showLoader && <MyLoader></MyLoader>}
+                
+            </>
+        );
+    }
 }
+
+export default App;

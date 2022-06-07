@@ -1,7 +1,7 @@
-import Loader from 'react-loader-spinner';
+import {Plane} from 'react-loader-spinner';
 export const MyLoader = () => {
     return (
-    <Loader
+    <Plane
       type="Plane"
       color="#00BFFF"
       height={80}
