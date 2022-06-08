@@ -31,7 +31,7 @@ export const SearchForm = styled.form`
     width: 48px;
     height: 48px;
     border: 0;
-    background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+    background-image: url('https://cdn.svgapi.com/vector/8953/search.svg');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
