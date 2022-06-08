@@ -9,7 +9,8 @@ export const ButtonContainer = styled.button`
   text-align: center;
   display: flex;
   justify-content: center;
-  margin: 20px;
+  
+  margin: 20px auto 20px auto;
   color: #fff;
   border: 0;
   text-decoration: none;
