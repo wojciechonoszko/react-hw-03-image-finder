@@ -19,7 +19,7 @@ class App extends Component {
 
     componentDidUpdate = () => {
         window.scrollTo({
-            top: document.documentElement.scroolHeight,
+            top: document.documentElement.scrollHeight,
             behavior: 'smooth'
         });
     };
@@ -61,9 +61,7 @@ class App extends Component {
     };
 
     closeModal = () => {
-        this.setState(prevState =>
-            prevState.showLoader ? null : {showLoader: true}
-        );
+        this.setState({modalLargeURL: ''});
     };
 
     showLoader = () => {
