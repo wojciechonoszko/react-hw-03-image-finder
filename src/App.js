@@ -6,7 +6,7 @@ import ImageGallery from './components/imageGallery/ImageGallery';
 import Modal from './components/modal/Modal';
 import Searchbar from './components/searchbar/Searchbar';
 
-const apiDelay = 200;
+const apiDelay = 20000;
 
 class App extends Component {
     state = {

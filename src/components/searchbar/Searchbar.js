@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 class Searchbar extends Component {
     state = {
         searchTerm: ''
-    }
+    };
 
 
     onInputChange = event => {
         this.setState({searchTerm: event.target.value});
     };
 
-    onSumbmit = event => {
+    onSubmit = event => {
         event.preventDefault();
         this.props.onSubmit(this.state.searchTerm);
     };
@@ -36,7 +36,7 @@ class Searchbar extends Component {
             </SearchbarHeader>
         );
     }
-};
+}
 
 Searchbar.propTypes = {
     onSubmit: PropTypes.func.isRequired

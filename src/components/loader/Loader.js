@@ -1,12 +1,11 @@
-import {Plane} from 'react-loader-spinner';
+import {Audio} from 'react-loader-spinner';
 export const MyLoader = () => {
     return (
-    <Plane
-      type="Plane"
-      color="#00BFFF"
-      height={80}
-      width={80}
-      timeout={3000}
+      <Audio
+      height="100"
+      width="100"
+      color='pink'
+      ariaLabel='loading'
       style={{zIndex: '100', position: 'fixed', top: '50%', left: '50%'}}
     />
     );
